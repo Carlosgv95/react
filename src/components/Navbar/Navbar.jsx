@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <nav>
                 <h3>Pizzeria Mamma Mia!</h3>
-                <ul>
+                <ul className='nav-links'>
                     <li>🍕<a href="#">Home</a></li>
                     <li>🔐<a href="#">Login</a></li>
                     <li>🔐<a href="#">Register</a></li>  

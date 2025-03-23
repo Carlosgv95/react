@@ -10,13 +10,13 @@ nav {
     color: aliceblue;
 }
 
-ul {
+.nav-links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
 
-ul li {
+.nav-links li {
     border: 1px solid gainsboro;
     padding: 5px;
     margin: 5px;
