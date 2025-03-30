@@ -25,11 +25,6 @@
     object-fit: cover;
 }
 
-.card p {
-    margin: 10px;
-    font-size: 12px;
-    text-align: justify;
-}
 
 .card h3 {
     margin: 10px;
