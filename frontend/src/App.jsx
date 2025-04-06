@@ -1,23 +1,22 @@
-import Footer from "./components/Footer/Footer"
-import Home from "./components/Home/Home"
-// import Pizza from "./components/Pizza/Pizza"
-import Navbar from "./components/Navbar/Navbar"
-// import Cart from "./components/Cart/Cart"
-// import Register from "./components/Register/Registro"
-// import Login from "./components/Login/Login"
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Navbar, Footer} from './components/index';
+import { Home, Pizza, Cart, Register, Login, NotFound, Profile } from './pages/index';
 const App = () => {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      {/* <Pizza /> */}
-      {/* <Cart /> */}
-      {/* <Register/> */}
-      {/* <Login /> */}
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/pizza' element={<Pizza />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

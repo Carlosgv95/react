@@ -1,18 +1,19 @@
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const total = 25000;
+    const total = 0;
     const token = false;
     return (
         <>
             <nav>
                 <h3>Pizzeria Mamma Mia!</h3>
                 <ul className='nav-links'>
-                    <li>🍕<a href="#">Home</a></li>
-                    <li>🔐<a href="#">Login</a></li>
-                    <li>🔐<a href="#">Register</a></li>  
+                    <Link to='/'><li>🍕 Home</li></Link>
+                    <Link to='/Login'><li>🔐 Login</li></Link>
+                    <Link to='/Register'><li>🔐 Register</li></Link>  
                 </ul>  
-                <a href="#" className='total'>🛒Total: ${total}</a>
+                <Link to='/Cart' className='total'>🛒Total: ${total}</Link>
             </nav>
         </>
     )

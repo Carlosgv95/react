@@ -1,6 +1,6 @@
 
-import CardPizza from "../CardPizza/CardPizza"
-import Header from "../Header/Header"
+import CardPizza from "../../components/CardPizza/CardPizza"
+import Header from "../../components/Header/Header"
 // import { pizzas } from "./pizzas"
 
 const Home = () => {
