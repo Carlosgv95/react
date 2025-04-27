@@ -20,8 +20,8 @@ const App = () => {
             <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
             <Route path='*' element={<NotFound />} />
           </Routes>
+          <Footer />
         </CartProvider>
-        <Footer />
       </UserProvider>
     </BrowserRouter>
   );
